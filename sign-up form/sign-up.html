@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/stormning" type="text/css"/>  <link rel="stylesheet" href="style-form.css">
+  <title>Sign-up</title>
+</head>
+<body>
+  <div class="content">
+    <div class="picture">
+      <div class="logo">
+        <img src="resources/drakkar-logo.png" alt="logo" class="trees">
+        <h1>North Travel</h1>
+      </div>
+    </div>
+    <div class="right">
+      <div class="up-right-txt">
+        <p><b>This is not a real online service!</b></p>
+        <p><b>Sign up <em>now</em> to get started in <em>nothing!</em></b></p>
+        <p class="remote-text"><u><b>You <em>know</em> you want to.</b></u></p>
+      </div>
+      <form action="thanks.html" method="post">
+        <div class="left form">
+          <p class="form-title"><u><b>Let's do absolute <em>nuts</em>!</b></u></p>
+          <div class="input">
+            <label class="entry-txt" for="first-name">*First name</label>
+            <input type="text" name="first-name" id="first-name" required>
+          </div>
+          <div class="input">
+            <label class="entry-txt" for="last-name">*Last name</label>
+            <input type="text" name="last-name" id="last-name">
+          </div>
+          <div class="input">
+            <label class="entry-txt" for="email">*Email</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div class="input">
+            <label class="entry-txt" for="phone-number">Phone number</label>
+            <input type="text" name="phone-number" id="phone-number" minlength="9" maxlength="9">
+          </div>
+          <div class="input">
+            <label class="entry-txt" for="password">*Password</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <div class="input">
+            <label class="entry-txt" for="confirm-password">*Confirm password</label>
+            <input type="password" name="confirm-password" id="confirm-password" required>
+          </div>
+          <textarea placeholder="Message..." rows="5" cols="71" minlength="4" maxlength="200"></textarea>
+          <div class="left button"><button type="submit">Create Account</button></div>
+        </div>
+      </form>
+      <div class="left log-in"><p>Already have an account?</p><a href="home.html">Log In</a></div>
+    </div>
+  </div>
+</body>
+</html>

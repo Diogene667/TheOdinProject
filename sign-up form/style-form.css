@@ -1,0 +1,236 @@
+:root {
+  --txt-color: rgb(50, 50, 50);
+  --top-right-background-color: rgb(150, 150, 150);
+  --form-right-background-color: rgb(222, 222, 222);
+  --logo-background-color: rgba(255, 255, 255, 0.5);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;/*!*/
+  font-family: 'Northern';
+  color: var(--txt);
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+}
+
+.content,
+.logo{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* left */
+
+.picture {
+  background-image: url(resources/pietro-de-grandi-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 35vw;
+}
+
+.logo{
+  background-color: var(--logo-background-color);
+  box-shadow: 0 .2em .7em -.1em rgb(51, 51, 51);
+  height: auto;
+  position: relative;
+  top: 40vh;
+  gap: .5vw;
+  padding: 1em 0;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  color: var(--txt-color);
+  font-family: 'Norse';
+}
+
+.trees {
+  height: 15vh;
+}
+
+/* right */
+
+.right{
+  width: 65vw;
+  background-color: var(--top-right-background-color);
+  box-shadow: 0 .2em .3em -.1em rgb(51, 51, 51);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  letter-spacing: .05em;
+}
+
+.left{
+  padding-left: 3vw;
+}
+
+.up-right-txt{
+  padding-left: 1em;
+  font-weight: 500;
+  width: 90vw;
+  font-size: 1.5em;
+}
+
+.remote-text{
+  margin: 1em 1em 2em;
+}
+
+/* form */
+
+.form {
+  background-color: var(--form-right-background-color);
+  box-shadow: 0 .2em .7em -.1em rgb(51, 51, 51);
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.input{
+  display: flex;
+  flex-flow: column wrap;
+  width: 40%;
+  font-size: 0.7rem;
+  opacity: 80%;
+}
+
+input:focus{
+  border: 2px solid black;
+}
+
+.form-title{
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 550;
+}
+
+.entry-txt {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+input{
+  background-color: var(--top-right-background-color);
+  border: .15em solid grey;
+  border-radius: .3em;
+}
+
+button{
+  background-color: var(--top-right-background-color);
+  color: var(--txt-color);
+  font-weight: 550;
+  font-size: 1.5em;
+  border: .1em solid black;
+  border-radius: .2em;
+  padding: .5em 1em;
+  margin: .5em 2em;
+}
+
+button:hover{
+  background-color: var(--txt-color);
+  color: grey;
+}
+
+
+.log-in{
+  display: flex;
+  gap: .5em;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+@font-face {/*!*/
+  font-family: 'Norse';
+  src: url('resources/Norse-Bold.eot');
+  src: url('resources/Norse-Bold.eot') format('embedded-opentype'),
+       url('resources/Norse-Bold.woff2') format('woff2'),
+       url('resources/Norse-Bold.woff') format('woff'),
+       url('resources/Norse-Bold.ttf') format('truetype');
+}
+
+@font-face {/*!*/
+  font-family: 'Northern';
+  src: url('resources/Northern\ Demo.eot');
+  src: url('resources/Northern\ Demo.eot') format('embedded-opentype'),
+       url('resources/Northern\ Demo.woff2') format('woff2'),
+       url('resources/Northern\ Demo.woff') format('woff'),
+       url('resources/Northern\ Demo.ttf') format('truetype');
+}
+
+@media only screen and (max-width: 600px/*!*/) {
+  .content{
+    flex-flow: column;
+    height: auto;
+    text-align: center;
+  }
+  .picture{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-size: 100vw;
+  }
+  .logo{
+    height: 20vh;
+    width: 100vw;
+    position: static;
+    gap: .5vw;
+  }
+  .right{
+    width: auto;
+    height: auto;
+  }
+  .dummy-text{
+    width: auto;
+    margin-top: 30px;
+  }
+  .left{
+    padding: 10px 20px;
+  }
+  .remote-text{
+    padding: 20px 0;
+    margin: 0;
+  }
+  .form{
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .input{
+    text-align: left;
+    width: auto;
+    font-size: 0.9em;
+    justify-content: center;
+    align-items: center;
+  }
+  input{
+    font-size: 0.9rem;
+    height: 1.5rem;
+    width: 70vw;
+  }
+  .button,
+  .log-in{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  button{
+    margin-bottom: 0px;
+    width: 60vw;
+    padding: 10px 5px;
+  }
+}
